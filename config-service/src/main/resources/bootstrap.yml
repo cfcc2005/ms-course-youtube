@@ -1,0 +1,15 @@
+server:
+  port: 8081
+  
+spring:
+  cloud:
+    config:
+      server:
+        uri: https://github.com/cfcc2005/ms-course-youtube.git
+        searchPaths: config-data
+        username: ${GIT_USER}
+        password: ${GIT_PASSWORD}
+  security:
+    user:
+      name: root
+      password: s3cr3et
